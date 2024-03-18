@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Senior Seminar Recipes</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- You can include your custom CSS file here -->
+     <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="ingredients.js"></script>
+
+
+</head>
+
+<body>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+
+    <h1>CapyCookin'</h1>
+
+
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Welcome</a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="main.html">Main<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Ingredients
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item active" href="#">View</a>
+                            <a class="dropdown-item" href="#">Add</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Recipes
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="recipe.html">View</a>
+                            <a class="dropdown-item" href="#">Add</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="export.html">Export<span class="sr-only">(current)</span></a>
+                    </li>
+                </ul>
+            </div>
+       </nav>
+
+
+
+
+
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+            <h2>Add Tags</h2>
+            <!--
+<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapsed" aria-expanded="false" aria-controls="collapsed">
+Appliances
+</button>
+-->
+        <div class="form-check">
+          <h3>Appliances</h3>
+          <input class="form-check-input" type="checkbox" value="" id=flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+            Air Fryer
+            </label>
+          <input class="form-check-input" type="checkbox" value="" id=flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+            Bakeware
+            </label>
+          <input class="form-check-input" type="checkbox" value="" id=flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+            Blender
+            </label>
+          <input class="form-check-input" type="checkbox" value="" id=flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+            Crockpot
+            </label>
+          <input class="form-check-input" type="checkbox" value="" id=flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+            Frying Pan
+            </label>
+          <input class="form-check-input" type="checkbox" value="" id=flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+            Grill
+            </label>
+          <input class="form-check-input" type="checkbox" value="" id=flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+            Microwave
+            </label>
+          <input class="form-check-input" type="checkbox" value="" id=flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+            Microwave
+            </label>
+          <input class="form-check-input" type="checkbox" value="" id=flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+            Oven
+            </label>
+          <input class="form-check-input" type="checkbox" value="" id=flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+            Rice Cooker
+            </label>
+          <input class="form-check-input" type="checkbox" value="" id=flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+            Saucepan
+            </label>
+          <input class="form-check-input" type="checkbox" value="" id=flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+            Steamer
+            </label>
+          <input class="form-check-input" type="checkbox" value="" id=flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+            Stovetop
+            </label>
+          <input class="form-check-input" type="checkbox" value="" id=flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+            Toaster
+            </label>
+          <input class="form-check-input" type="checkbox" value="" id=flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+            Wok
+            </label>
+
+           <h3>Dietary</h3>
+          <input class="form-check-input" type="checkbox" value="" id=flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+            Contains Nuts
+            </label>
+          <input class="form-check-input" type="checkbox" value="" id=flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+            Contains Shellfish
+            </label>
+          <input class="form-check-input" type="checkbox" value="" id=flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+            Dairy
+            </label>
+          <input class="form-check-input" type="checkbox" value="" id=flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+            Gluten Free
+            </label>
+          <input class="form-check-input" type="checkbox" value="" id=flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+            Includes Meat
+            </label>
+          <input class="form-check-input" type="checkbox" value="" id=flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+            Vegan
+            </label>
+          <input class="form-check-input" type="checkbox" value="" id=flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+            Vegetarian
+            </label>
+
+        <h3>Meal Type</h3>
+          <input class="form-check-input" type="checkbox" value="" id=flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+            Lunch
+            </label>
+          <input class="form-check-input" type="checkbox" value="" id=flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+            Dinner
+            </label>
+          <input class="form-check-input" type="checkbox" value="" id=flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+            Dessert
+            </label>
+          <input class="form-check-input" type="checkbox" value="" id=flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+            Snack
+            </label>
+          <input class="form-check-input" type="checkbox" value="" id=flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+            Baked Goods
+            </label>
+
+        <h3>Custom</h3>
+          <input class="form-check-input" type="checkbox" value="" id=flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+            Favorite
+            </label>
+          <input class="form-check-input" type="checkbox" value="" id=flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+            User
+            </label>
+
+
+
+            </div>
+
+             <!--   <ul class="list-group">
+                    <li class="list-group-item">Ing 1 <p class="tag">   * Gluten Free</p><p class="tag">  * Vegan</p></li>
+                    <li class="list-group-item">Ing 2 <p class="tag"></p></li>
+                </ul>
+                -->
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+
+                 <h2>Add Ingredient</h2>
+        <div class="form-group">
+          <input type="text" class="form-control" id="ingredientInput" placeholder="Enter ingredient">
+        </div>
+        <button class="btn btn-primary" id="addIngredientBtn">Add</button>
+      </div>
+      <div class="col-md-6">
+        <h2>Ingredients List</h2>
+        <ul class="list-group" id="ingredientList">
+        </ul>
+      </div>
+            </div>
+        </div>
+    </div>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+</body>
+</html>
