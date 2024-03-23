@@ -1,7 +1,7 @@
 When the user selects add ingredient, find id of last, increment, then add to table?
 BSON object, pull ingredients/tags/steps/name/image/
 
-___________________________________________________________
+
 Javascript functions:
     Functionality for the buttons
     
@@ -21,13 +21,14 @@ Javascript functions:
 
 
 
-_________________________________________________________
+
 SORT BY AND TAGS
 Sort by:
 # of ingredients(Greater or fewer)
 Total Time to cook(More or less)
 Date added(Recent vs old)
 Serves
+
 
 Tags(have a search):
 Glutenfree
@@ -40,14 +41,3 @@ Dessert
 Frying Pan
 Favorite
 Custom?
-_____________________________________________________________________
-WEBSITE & USER FORMS
-    Implement import and export forms supporting docx, pdf, xlsx(too many?)
-    If import feature, then user login form to store personal files. Perhaps signup forms?
-        --Conventional form features
-        --detect CAPSLOCK ENABLED
-        --FAQ page(footer menu?)
-        --Discussion Forum?
-        Suggestions?
-_____________________________________________________________________
-PITCH IDEAS HERE

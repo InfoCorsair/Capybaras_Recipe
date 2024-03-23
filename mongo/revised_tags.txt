@@ -1,4 +1,3 @@
---Appliance
 Oven
 Blender
 Air Fryer
@@ -13,8 +12,6 @@ Steamer
 Wok
 Saucepan
 Bakeware
-
---Dietary
 Vegetarian
 Vegan
 Gluten Free
@@ -22,8 +19,6 @@ Contains Nuts
 Dairy
 Contains Shellfish
 Includes Meat
-
---Meal Types 
 Breakfast
 Lunch
 Dinner

@@ -9,7 +9,7 @@ mongo_db = MongoClient(mongo_url)
 # Create the database
 db = mongo_db["CapyCookin"]
 # Create Collections
-coll = db.create_collection("Ingredients")
+coll = db.create_collection("Recipe")
 
 # Create document
 data = dict()
@@ -34,6 +34,7 @@ data["Recipe"] = "1. Preheat the oven to 325°F.\n2. Lightly spray an 8x8 baking
 
 # Insert document
 x = coll.insert_one(data).inserted_id
+data.clear()
 
 # Wait till enter
 text = input("Press enter to initiate query")
@@ -44,3 +45,9 @@ myquery = { "Name": "Fried Egg" }
 mydoc = mycoll.find(myquery)
 for x in mydoc:
 	print (x)
+
+
+# Create Types collection
+call = db.create_collection("Types")
+# Create document
+data = dict()
